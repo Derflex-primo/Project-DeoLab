@@ -30,6 +30,14 @@ p {
     color: #242424;
 }
 
+.containerq:nth-child(even){
+    background-color: #f8f8f8;
+  }
+
+html {
+    scroll-behavior: smooth;
+}
+
 /* HEADER */
 
 nav {
@@ -142,6 +150,7 @@ PAGE 1
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
+    padding: 80px;
 }
 
 .page1__left {
@@ -222,6 +231,7 @@ SERVICES
 
 .container {
     padding: 80px 0;
+    width: 100%;
 }
 
 .row {
@@ -260,6 +270,7 @@ SERVICES
     margin-top: 40px;
 
 }
+
 .service__icon {
     color: #242424;
     width: 30px;
@@ -304,10 +315,14 @@ GUIDE--RIGHT
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    margin-top: 80px;
+    padding: 80px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.guide__step--big {
+    font-size: 40px;
 }
 
 .guide__step--small {
@@ -368,7 +383,117 @@ GUIDE--RIGHT
 }
 
 .guide__img--left {
-    width: 100%;
+    width: 500px;
     height: 100%;
     margin-top: 50px
 }
+
+/* 
+
+VALUES
+
+*/
+
+.value {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: 80px 0;
+}
+
+.value__right {
+    width: 40%;
+}
+
+
+.valuee {
+    width: 100%;
+}
+
+.value__row {
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+}
+
+.standards {
+    margin-bottom: 30px;
+}
+
+.value__title {
+   margin-bottom: 20px;
+}
+
+.value__para,
+.value__right--prin-para {
+    text-align: left;
+    left: 0;
+    line-height: 1.5;
+    --tw-text-opacity: 1;
+    color: rgb(124 139 161 / var(--tw-text-opacity));
+
+}
+
+.value__right--icon1 {
+    width: 40px;
+}
+
+.value__right--icon {
+    padding-right: 10px;
+}
+
+.value__right--prin {
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+}
+
+.value__right--prin-title {
+    color: darkred;
+    font-weight: 100;
+}
+
+
+.value__left {
+    width: 60%;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.value__left--img1 {
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.16);
+}
+
+.move {
+    position: absolute;
+    left: 1330px;
+    margin: 50px;
+    animation: animate-profile-picture infinite 1s 1s backwards ;
+}
+
+
+@keyframes animate-profile-picture {
+
+    0% {
+      transform: scale(.7);
+    }
+  
+    80% {
+      transform: scale(.9);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+    
+  }
+
+  
+
+  
