@@ -82,11 +82,17 @@
                   name="EmailAddress"
                   placeholder="Your E-mail address"
                 />
-                <button type="submit">Get Started</button>
+                <button id="wala" onclick="myFunction()" type="submit">Get Started</button>
               </div>
             </form>
           </div>
         </div>
+
+        <script>
+          function myFunction() {
+            document.getElementById("wala").innerHTML = "Sent";
+          }
+        </script>
         <div class="page1__right">
           <figure class="page1__img">
             <img
@@ -393,7 +399,7 @@
                       </p>
                     </div>
                     <div class="buy__now">
-                      <a class="buy__1 buy__2" href="#">Buy now</a>
+                      <a class="buy__1 buy__2" id="hello"  href="#">Buy now</a>
                     </div>
                   </div>
                 </div>
@@ -424,7 +430,7 @@
                       </p>
                     </div>
                     <div class="buy__now">
-                      <a class="buy__1 buy__2" href="#">Buy now</a>
+                      <a class="buy__1 buy__2" id="hello"  href="#">Buy now</a>
                     </div>
                   </div>
                 </div>
@@ -455,7 +461,7 @@
                       </p>
                     </div>
                     <div class="buy__now">
-                      <a class="buy__1 buy__2" href="#">Buy now</a>
+                      <a class="buy__1 buy__2" id="hello" href="#">Buy now</a>
                     </div>
                   </div>
                 </div>
@@ -465,6 +471,13 @@
         </div>
       </div>
     </div>
+    
+    <script>
+      let hello;
+      hello = "Sent to Admin"
+      alert("Accept cookies")
+    </script>
+
     <footer>
       <div class="row footer__row">
         <a href="#" class="footer__anchor">
@@ -492,7 +505,7 @@
             >Email</a
           >
           <a
-            href="./Example Resume.pdf"
+            href="https://web.facebook.com/dryldeogracias"
             target="_blank"
             class="footer__social--link link__hover-effect link__hover-effect"
             target="_blank"
